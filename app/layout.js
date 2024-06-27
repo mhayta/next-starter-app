@@ -1,5 +1,14 @@
+/**
+ * @Author: Musa Hayta - musahayta@gmail.com
+ * @Date:   2024-05-11 13:42:26
+ * @Last Modified by:   Musa Hayta - musahayta@gmail.com
+ * @Last Modified time: 2024-05-18 02:41:00
+ */
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Providers } from "./providers";
+import Navbar from "@/components/Navbar";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,8 +19,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <Providers>
+          <Navbar />
+          {children}
+          <Toaster />
+        </Providers>
+      </body>
     </html>
   );
 }
