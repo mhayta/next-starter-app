@@ -2,7 +2,7 @@
  * @Author: Musa Hayta - musahayta@gmail.com
  * @Date:   2024-05-16 23:54:07
  * @Last Modified by:   Musa Hayta - musahayta@gmail.com
- * @Last Modified time: 2024-05-18 02:30:59
+ * @Last Modified time: 2024-07-02 16:52:24
  */
 "use client";
 
@@ -56,6 +56,7 @@ export function SignInForm(props) {
     }
     toast({ description: "Wellcome" });
     router.push(props.callbackUrl ? props.callbackUrl : "/");
+    router.refresh();
   }
 
   return (

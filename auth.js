@@ -2,10 +2,10 @@
  * @Author: Musa Hayta - musahayta@gmail.com
  * @Date:   2024-05-11 16:25:00
  * @Last Modified by:   Musa Hayta - musahayta@gmail.com
- * @Last Modified time: 2024-05-17 18:40:54
+ * @Last Modified time: 2024-06-28 00:59:27
  */
 import NextAuth from "next-auth";
-import { PrismaAdapter } from "@auth/prisma-adapter";
+//import { PrismaAdapter } from "@auth/prisma-adapter";
 import prisma from "@/lib/db";
 import Credentials from "next-auth/providers/credentials";
 import Google from "next-auth/providers/google";

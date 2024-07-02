@@ -2,7 +2,7 @@
  * @Author: Musa Hayta - musahayta@gmail.com
  * @Date:   2024-05-13 15:16:56
  * @Last Modified by:   Musa Hayta - musahayta@gmail.com
- * @Last Modified time: 2024-05-18 02:49:10
+ * @Last Modified time: 2024-07-02 16:40:00
  */
 import { auth, signIn, signOut } from "@/auth";
 import ThemeSwitch from "@/components/ui/ThemeSwitcher";
